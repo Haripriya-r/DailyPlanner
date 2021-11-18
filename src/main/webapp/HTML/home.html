@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="stylesheet" href="../CSS/home.css">
+<link rel="stylesheet" href="../CSS/homecontainer.css">
+<link rel="stylesheet" href="../CSS/sticky.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >Your Daily Planner</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a>Home</a></li>
+	  <li><a id="myBtn">Add Task</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">view task <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a id="allTask">View Completed Task</a></li>
+          <li><a id="bttn">View Pending Task</a></li>
+        </ul>
+      </li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a  id="ProfileBttn"><span class="glyphicon glyphicon-user"></span> profile</a></li>
+      <li><a id="button" onclick="SignOut()"><span class="glyphicon glyphicon-log-out"></span>Sign Out </a></li>
+    </ul>
+    
+  </div>
+</nav>
+
+<div class="container">
+  <div id="piechart"></div>
+  <div class="div1">
+  <ul>
+  <li>Task need to be completed within today - <span id="notCompleted"></span></li>
+  <li>Task completed for today - <span id="completed"></span></li>
+  </ul>
+  </div>
+<div id="sticky">
+  <textarea>Remainder for Today</textarea>
+ </div>
+ 
+ <div id="secondSticky">
+<textarea>This is a sticky note you can type and edit.</textarea>
+</div>
+ 
+</div>
+  
+
+<div id="myModal" class="modal">
+<div class="modal-content" id="main">
+
+</div>
+</div>
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src ="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+<script src="../JavaScript/home.js"></script>
+<script src="../JavaScript/addTask.js"></script>
+<script src="../JavaScript/viewTask.js"></script>
+<script src="../JavaScript/profileChange.js"></script>
+<script src="../JavaScript/piechart.js"></script>
+</html>

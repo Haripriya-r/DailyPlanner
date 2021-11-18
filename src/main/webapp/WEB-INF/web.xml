@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://JAVA.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+
+  
+<servlet>
+	<servlet-name> LoginServlet</servlet-name>
+	<servlet-class>com.todo.servlet.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/loginServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SignupServlet</servlet-name>
+	<servlet-class>com.todo.servlet.SignupServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>SignupServlet</servlet-name>
+	<url-pattern>/signupServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>HomeServlet</servlet-name>
+	<servlet-class>com.todo.servlet.HomeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>HomeServlet</servlet-name>
+	<url-pattern>/homeServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AddTaskServlet</servlet-name>
+	<servlet-class>com.todo.servlet.AddTaskServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>AddTaskServlet</servlet-name>
+	<url-pattern>/addTaskServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ViewTaskServlet</servlet-name>
+	<servlet-class>com.todo.servlet.ViewTaskServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ViewTaskServlet</servlet-name>
+	<url-pattern>/viewTaskServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>UpdateTaskServlet</servlet-name>
+	<servlet-class>com.todo.servlet.UpdateTaskServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>UpdateTaskServlet</servlet-name>
+	<url-pattern>/updateTaskServlet</url-pattern>
+</servlet-mapping>
+
+
+</web-app>  
+
+
